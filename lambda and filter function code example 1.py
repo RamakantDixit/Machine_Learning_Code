@@ -35,3 +35,13 @@ print("odd list= ",odd)
 #in the given number list how to show every 5th element
 for n in range(0,len(num),5):
     print(num[n])
+
+# List List comprehensions
+old_list = [1, 0, -2, 4, -3]
+new_list = [x**2 for x in old_list if x > 0]
+print(new_list)
+
+# remove all special char from string
+str="as ramakant ## is %%^^^^&&&***@@@@ hero"
+new_str=' '.join(list(filter(lambda x:x.isalnum(),str.split())))
+print(new_str)
