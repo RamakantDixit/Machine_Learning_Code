@@ -36,6 +36,7 @@ print("odd list= ",odd)
 for n in range(0,len(num),5):
     print(num[n])
 
+
 # List List comprehensions
 old_list = [1, 0, -2, 4, -3]
 new_list = [x**2 for x in old_list if x > 0]
