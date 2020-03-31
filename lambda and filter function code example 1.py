@@ -46,3 +46,44 @@ print(new_list)
 str="as ramakant ## is %%^^^^&&&***@@@@ hero"
 new_str=' '.join(list(filter(lambda x:x.isalnum(),str.split())))
 print(new_str)
+
+
+#print prime number till given number
+num=100
+for n in range(2,num):
+    for i in range(2,n):
+        if(n%i)==0:
+            break
+        else:
+            print(n)
+            break
+# print Fibonacci till given number
+n1,n2=0,1
+count=0
+num=20
+while n1<=num:
+    print(n1)
+    nth=n1+n2
+    n1=n2
+    n2=nth
+    count=count+1
+
+#print Fibonacci till given term
+n1,n2=0,1
+count=0
+num=20
+while count<=num:
+    print(n1)
+    nth=n1+n2
+    n1=n2
+    n2=nth
+    count=count+1
+
+# reverse the given string
+strs="I love my india"
+strs_t=strs.split()
+print(strs_t[::-1])
+
+#print reverse string along with char
+print(strs[::-1])
+
